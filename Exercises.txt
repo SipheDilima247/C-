@@ -1,0 +1,875 @@
+Task 1: Mixed Practice (Covers All Requested Topics)
+========================================================
+Objective: Create a "User Profile & Lucky Number" console program.
+
+===================================================================
+Requirements:
+=========================================================
+Ask the user for their full name (string input).
+Ask the user for their age (integer input).
+Ask the user for a favorite number (integer input).
+Generate a random number between 10 and 99 (inclusive) using the Random class.
+
+====================================================================
+Calculate and display:
+===================================================================
+The user’s age in months (age * 12)
+The square root of their favorite number using Math.Sqrt()
+Their favorite number raised to the power of 2 using Math.Pow()
+
+======================================================================
+Create a "Lucky Code" by combining:
+=====================================================================
+First 3 letters of their name (uppercase)
+Their random number
+Last digit of their age
+Example: JOH45 3
+
+Display the Lucky Code and its length using string methods.
+
+Additional Rules:
+
+Use Console.WriteLine() and Console.ReadLine() for all input/output.
+Handle basic invalid input gracefully (e.g., if they enter text for age, show a nice error and ask again — optional but good for bonus).
+Keep the program clean and well-organized.
+
+========================================================================
+Task 2 (Simplified - No Loops)
+========================================================================
+Objective: Create a "Math Explorer" program.
+
+=========================================================================
+Requirements:
+========================================================================
+Ask the user for their name (string).
+Ask the user for two integers (number A and number B).
+Generate one random integer between 1 and 20 (call it bonus).
+========================================================================
+Using the Math class, calculate and display:
+=========================================================================
+The sum of A and B
+The product of A and B
+The square root of A (Math.Sqrt)
+A raised to the power of B (Math.Pow)
+A + B + bonus (the random number)
+=======================================================================
+Create a "Math Tag" string:
+=====================================================================
+Take the first 3 letters of the name (uppercase)
+Add the bonus number
+Add the word "Math" at the end
+Example: JOH7Math
+
+Display the Math Tag and its length.
+
+======================================================================
+✅ Task 3
+=====================================================================
+Objective: Create a "Personal Fitness Calculator" program.
+
+====================================================================
+Requirements:
+===================================================================
+Ask the user for their full name.
+Ask the user for their weight in kg (double).
+Ask the user for their height in meters (double).
+Generate a random "motivation number" between 5 and 15 (inclusive).
+======================================================================
+Using the Math class, calculate and display:
+=======================================================================
+BMI = weight / (height × height) → use Math.Pow() or simple multiplication
+Square root of the weight
+Height raised to the power of 3 (Math.Pow(height, 3))
+=========================================================================
+Create a "Fitness ID" string:
+==========================================================================
+First 4 uppercase letters of their name
+Followed by the motivation number
+Followed by the word "FIT"
+Example: JOHN12FIT
+
+Display the Fitness ID and its length using string methods.
+Display all calculations with clear labels.
+
+Keep it simple — single run, no loops, focus on clean input + calculations + strings.
+
+===========================================================================================
+✅ Task 4
+========================================================================================
+Objective: Create a "Lucky Lottery Ticket Generator" program.
+
+=====================================================================================
+Requirements:
+============================================================================================
+Ask the user for their full name (string).
+Ask the user for their lucky base number (integer).
+Generate three random numbers:
+One between 10 and 30 (call it lucky1)
+One between 50 and 80 (call it lucky2)
+One between 1 and 10 (call it bonus)
+=============================================================================================
+Using Math class and basic arithmetic, calculate and display:
+============================================================================================
+The product of the base number and lucky1
+The square root of lucky2
+The base number raised to the power of bonus (Math.Pow)
+===================================================================================================
+Create a "Lottery Ticket Code" using string methods:
+====================================================================================================
+First 3 letters of name in uppercase
+Followed by lucky1
+Followed by -
+Followed by lucky2
+Followed by the word "LUCK"
+Example: JOH25-67LUCK
+
+Display the full Lottery Ticket Code and its length.
+
+============================================================================================================
+✅ Task 5
+================================================================================================================
+Objective: Create a "Travel Budget Planner" program.
+
+================================================================================================================
+Requirements:
+================================================================================================================
+Ask the user for their full name.
+Ask the user for their total budget in USD (double).
+Ask the user for the number of travel days (integer).
+===============================================================================================================
+Generate two random numbers:
+===============================================================================================================
+dailyCost → random integer between 30 and 120
+exchangeRate → random double between 0.8 and 1.4 (use NextDouble())
+=============================================================================================================
+Using Math class and arithmetic, calculate and display:
+=============================================================================================================
+Estimated total expenses = dailyCost × number of days
+Remaining budget after expenses
+Square root of the total budget (Math.Sqrt)
+Budget raised to the power of 0.5 (same as square root, but use Math.Pow)
+==========================================================================================================
+Create a "Travel Code" using string methods:
+==========================================================================================================
+First 4 letters of name in uppercase
+Followed by the dailyCost
+Followed by "TRIP"
+Example: JOHN85TRIP
+
+Display the Travel Code and its length.
+
+=============================================================================================================
+✅ Task 6
+============================================================================================================
+Objective: Create a "Movie Night Planner" program.
+
+===========================================================================================================
+Requirements:
+===========================================================================================================
+Ask the user for their full name.
+Ask the user for the ticket price (double).
+Ask the user for number of friends coming (integer).
+Generate two random values:
+snackCost → random integer between 8 and 25
+rating → random double between 6.5 and 9.8 (use NextDouble())
+============================================================================================================
+Using Math class + arithmetic, calculate and display:
+============================================================================================================
+Total ticket cost (ticket price × (friends + 1))
+Total estimated cost (tickets + snacks)
+Square root of total ticket cost
+Ticket price raised to the power of 2 (Math.Pow)
+============================================================================================================
+Create a "Movie Code" using string methods:
+===========================================================================================================
+First 3 letters of name in uppercase
+Followed by snackCost
+Followed by "MOV"
+Example: JOH15MOV
+
+Display the Movie Code and its length
+
+============================================================================================================
+Task 7 (Now with Conditionals)
+============================================================================================================
+Objective: Create a "Grade & Luck Calculator" program.
+
+===========================================================================================================
+Requirements:
+==========================================================================================================
+Ask the user for their full name.
+Ask the user for their exam score (integer between 0 and 100).
+Generate a random luck number between 1 and 10.
+===========================================================================================================
+Use if-else statements to determine and display the grade:
+===========================================================================================================
+90–100 → "A - Excellent!"
+80–89 → "B - Good!"
+70–79 → "C - Average"
+60–69 → "D - Pass"
+Below 60 → "F - Fail"
+===========================================================================================================
+Use a switch statement on the luck number to display a fun message:
+==========================================================================================================
+1 or 2 → "Unlucky day... but you can improve!"
+3 to 5 → "Average luck"
+6 to 8 → "Good luck today!"
+9 or 10 → "Extremely lucky! Go buy a lottery ticket!"
+===========================================================================================================
+Create a "Student Code":
+===========================================================================================================
+First 3 letters of name (uppercase)
+Followed by the luck number
+Followed by the letter grade (A/B/C/D/F)
+
+Display the Student Code and its length.
+
+=============================================================================================================
+✅ Task 8
+===========================================================================================================
+Objective: Create a "Simple Bank Account Simulator" program.
+==============================================================================================================
+Requirements:
+=========================================================================================================
+Ask the user for their full name.
+Ask the user for their current balance (double).
+===========================================================================================================
+Ask the user to choose a transaction type:
+=============================================================================================================
+1 → Deposit
+2 → Withdraw
+3 → Check Balance
+
+Ask for the amount (double) if they choose Deposit or Withdraw.
+Use if-else and switch where appropriate:
+Use switch for the transaction type.
+Use if-else to check if withdrawal is possible (not more than current balance).
+
+Generate a random transaction ID (integer between 1000 and 9999).
+Calculate and display the new balance after transaction.
+================================================================================================================
+Create a "Account Code" using string methods:
+===============================================================================================================
+First 4 uppercase letters of name
+Followed by last 2 digits of the transaction ID
+Example: JOHN45
+
+Display the Account Code and its length.
+
+Bonus for extra points:
+
+Show appropriate messages (e.g. "Insufficient funds!" for bad withdrawal).
+
+===============================================================================================================
+Task 10 (New Topics Included)
+================================================================================================================
+Objective: Create a "Number Guessing Game" with limited attempts.
+==============================================================================================================
+Requirements:
+================================================================================================================
+Ask the user for their name.
+Generate a secret number between 1 and 50 (using Random).
+Give the user up to 6 attempts to guess the number (use a while or for loop).
+================================================================================================================
+For each guess:
+========================================================================================================
+Take user input.
+============================================================================================================
+Use if-else + logical operators to give hints:
+=========================================================================================================
+Too high → "Too High!"
+Too low → "Too Low!"
+Correct → "Congratulations [Name]! You guessed it!"
+
+
+If they run out of attempts, reveal the secret number.
+==========================================================================================================
+At the end, create a "Game Code" using string methods:
+=========================================================================================================
+First 3 letters of name (uppercase)
+Followed by the secret number
+Followed by "WIN" or "LOSE" depending on whether they guessed correctly.
+
+Display the Game Code and its length.
+=========================================================================================================
+Bonus for higher score:
+========================================================================================================
+
+Use logical operators to check if the guess is valid (between 1 and 50).
+Keep track of how many attempts they used.
+
+========================================================================================================================
+✅ Task 11
+========================================================================================================================
+Objective: Create a "Basic Login & Menu System" program.
+========================================================================================================================
+Requirements:
+=======================================================================================================================
+
+Ask the user for their username (string).
+Give the user 3 attempts to enter the correct password ("pass123") using a while loop + logical operators.
+If password is correct → Show success message.
+If all attempts fail → Show "Access Denied" and end program.
+=========================================================================================================================
+If login is successful, show a menu with 3 options using a for loop or while loop:
+=========================================================================================================================
+1 → Generate Random Number (1-100)
+2 → Calculate Square Root of a number (ask for input)
+3 → Exit
+
+Use switch to handle menu choices.
+=======================================================================================================================
+Create a "User Token" after successful login:
+=======================================================================================================================
+First 4 uppercase letters of username
+Followed by a random 4-digit number
+
+Display the User Token and its length.
+======================================================================================================================
+Bonus for higher marks:
+=======================================================================================================================
+Use logical operators to validate menu input.
+Show "Invalid option" message if user picks wrong menu choice.
+
+======================================================================================================================
+✅ Quick Reminder Exercise
+====================================================================================================================
+Objective: Create a "Daily Stats Tracker" program.
+
+=======================================================================================================================
+Requirements:
+======================================================================================================================
+Ask the user for their name.
+Ask for the number of hours slept last night (double).
+Generate a random mood score between 1 and 10.
+=========================================================================================================================
+Use if-else + logical operators to give a message based on hours slept:
+========================================================================================================================
+Less than 5 → "You need more rest!"
+Between 5 and 7 (inclusive) → "Okay sleep."
+More than 7 → "Great sleep!"
+
+Use a for loop to print the mood score 3 times (just for practice).
+========================================================================================================================
+Create a "Daily Code":
+=======================================================================================================================
+First 3 uppercase letters of name
+Followed by the mood score
+Followed by "DAY"
+
+Display the Daily Code and its length.
+
+Keep it simple — this is just a warm-up to refresh everything.
+
+======================================================================================================================
+✅ Task 12
+=====================================================================================================================
+Objective: Create a "Simple Fitness Tracker" program.
+
+======================================================================================================================
+Requirements:
+=====================================================================================================================
+Ask the user for their name.
+Ask how many days they want to track (integer between 1 and 7).
+Use a for loop to collect the number of steps for each day.
+After collecting the steps:
+Calculate the total steps.
+Calculate the average steps (use Math.Round if needed).
+
+Generate a random daily goal between 5000 and 12000.
+=======================================================================================================================
+Use if-else + logical operators to give feedback:
+=====================================================================================================================
+If total steps ≥ daily goal × number of days → "Excellent! You crushed your goal!"
+Else if average steps ≥ 7000 → "Good effort!"
+Else → "You need to walk more."
+====================================================================================================================
+Create a "Fitness Code":
+===================================================================================================================
+First 3 uppercase letters of name
+Followed by the total steps
+Followed by "FIT"
+
+Display the Fitness Code and its length.
+
+Bonus:
+
+Validate that the number of days is between 1 and 7.
+Show steps for each day as they are entered.
+
+===================================================================================================================
+✅ Task 13
+==================================================================================================================
+Objective: Create a "Simple Quiz Game" program.
+
+================================================================================================================
+Requirements:
+================================================================================================================
+Ask the user for their name.
+Create 3 simple math questions (you can hardcode the questions and answers).
+Use a for loop to ask all 3 questions.
+Keep a score counter (start at 0).
+================================================================================================================
+For each question:
+================================================================================================================
+Ask the question.
+Get the user’s answer.
+Use if statements to check if the answer is correct.
+If correct → add 1 to the score and show “Correct!”
+If wrong → show “Wrong!” and the correct answer.
+
+After all questions, display the final score.
+=================================================================================================================
+Use if-else + logical operators to give a final message:
+================================================================================================================
+Score == 3 → "Perfect score, [Name]!"
+Score == 2 → "Good job, [Name]!"
+Score ≤ 1 → "Keep practicing, [Name]!"
+================================================================================================================
+Create a "Quiz Code":
+===================================================================================================================
+First 3 uppercase letters of name
+Followed by the score
+Followed by "QUIZ"
+
+Display the Quiz Code and its length.
+====================================================================================================================
+Bonus:
+=====================================================================================================================
+Generate one of the questions using random numbers.
+
+=======================================================================================================================
+✅ Task 14
+=====================================================================================================================
+Objective: Create a "Student Marks Analyzer" program.
+
+====================================================================================================================
+Requirements:
+=====================================================================================================================
+Ask the user for their name.
+Ask how many subjects they want to enter (between 3 and 6).
+Create an array of that size to store the marks.
+Use a for loop to get the marks for each subject (store them in the array).
+===================================================================================================================
+After collecting the marks:
+===================================================================================================================
+Calculate the total marks.
+Calculate the average (use Math.Round if you want).
+
+Find the highest and lowest mark in the array (use a loop).
+======================================================================================================================
+Use if-else + logical operators to give a comment based on the average:
+=======================================================================================================================
+Average ≥ 80 → "Excellent performance!"
+Average ≥ 60 and < 80 → "Good performance"
+Average < 60 → "Needs improvement"
+====================================================================================================================
+Create a "Result Code":
+====================================================================================================================
+First 3 uppercase letters of name
+Followed by the average (rounded to whole number)
+Followed by "RES"
+
+Display the Result Code and its length.
+
+Bonus:
+
+Display all the marks that were entered.
+Validate that marks are between 0 and 100.
+
+======================================================================================================================
+✅ Task 15
+======================================================================================================================
+Objective: Create a "Weekly Temperature Logger" program.
+
+=====================================================================================================================
+Requirements:
+===================================================================================================================
+Ask the user for their name.
+Create an array of size 7 to store temperatures for each day of the week.
+Use a for loop to ask the user for the temperature of each day (Monday to Sunday) and store them in the array.
+===================================================================================================================
+After collecting all temperatures, display:
+====================================================================================================================
+All 7 temperatures
+The highest temperature
+The lowest temperature
+The average temperature (rounded to 1 decimal place)
+
+Generate a random "Weather Mood" number between 1 and 5.
+======================================================================================================================
+Use a switch statement on the Weather Mood to print a message:
+=====================================================================================================================
+1 → "Cold and rainy"
+2 → "Cloudy"
+3 → "Mild"
+4 → "Sunny"
+5 → "Hot and clear"
+=====================================================================================================================
+Create a "Weather Code":
+====================================================================================================================
+First 3 uppercase letters of the name
+Followed by the average temperature (as a whole number)
+Followed by "WX"
+
+Display the Weather Code and its length.
+
+Bonus:
+
+Validate that each temperature is between -20 and 50.
+
+======================================================================================================================
+✅ Task 16
+==================================================================================================================
+Objective: Create a "Shopping Cart Simulator" program.
+
+====================================================================================================================
+Requirements:
+===================================================================================================================
+Ask the user for their name.
+Ask how many items they want to buy (between 2 and 5).
+===================================================================================================================
+Create two arrays of that size:
+====================================================================================================================
+One for item names (string[])
+One for item prices (double[])
+===================================================================================================================
+Use a for loop to:
+====================================================================================================================
+Ask for the name of each item
+Ask for the price of each item
+Store both in the arrays
+===================================================================================================================
+After collecting the data, display:
+====================================================================================================================
+All item names with their prices
+The total cost of all items
+The most expensive item (name + price)
+
+Generate a random discount percentage between 5 and 20.
+Calculate the final price after applying the discount.
+======================================================================================================================
+Create a "Cart Code":
+====================================================================================================================
+First 3 uppercase letters of the name
+Followed by the total cost (as a whole number)
+Followed by "CART"
+
+Display the Cart Code and its length.
+
+Bonus:
+
+Show the discount amount and final price clearly.
+
+========================================================================================================================
+✅ Task 17
+========================================================================================================================
+Objective: Create a "Student Attendance Tracker" program.
+
+========================================================================================================================
+Requirements:
+=======================================================================================================================
+Ask the user for their name.
+Ask how many students are in the class (between 3 and 8).
+========================================================================================================================
+Create two arrays of that size:
+========================================================================================================================
+One for student names (string[])
+One for attendance (bool[]) — true = present, false = absent
+==========================================================================================================================
+Use a for loop to:
+==========================================================================================================================
+Ask for each student’s name
+Ask if they are present (y / n)
+Store the name and set the attendance to true or false
+===========================================================================================================================
+After collecting the data, display:
+===========================================================================================================================
+A list of all students and whether they are Present or Absent
+The total number of students present
+The total number of students absent
+
+Calculate the attendance percentage.
+==========================================================================================================================
+Use if-else to give a class comment:
+==========================================================================================================================
+Percentage ≥ 80 → "Good attendance!"
+Percentage ≥ 50 and < 80 → "Average attendance"
+Percentage < 50 → "Poor attendance"
+==========================================================================================================================
+Create an "Attendance Code":
+==========================================================================================================================
+First 3 uppercase letters of the user’s name
+Followed by the number of students present
+Followed by "ATT"
+
+Display the Attendance Code and its length.
+
+Bonus:
+
+Validate that the user only enters y or n for attendance.
+
+========================================================================================================================
+✅ Task 18
+========================================================================================================================
+Objective: Create a "Simple Inventory Manager" program.
+
+========================================================================================================================
+Requirements:
+========================================================================================================================
+Ask the user for their name.
+Ask how many products they want to manage (between 3 and 6).
+========================================================================================================================
+Create three arrays of that size:
+=======================================================================================================================
+string[] for product names
+int[] for quantities
+double[] for prices
+========================================================================================================================
+Use a for loop to collect:
+=======================================================================================================================
+Product name
+Quantity in stock
+Price per item
+=======================================================================================================================
+After collecting the data, display:
+======================================================================================================================
+A list of all products with their quantity and price
+The total value of the inventory (quantity × price for each item, then sum)
+The product with the highest quantity
+
+Generate a random restock number between 10 and 50.
+Use if-else to check if any product has quantity less than the restock number and display a warning if needed.
+======================================================================================================================
+Create an "Inventory Code":
+=====================================================================================================================
+First 3 uppercase letters of the user’s name
+Followed by the total number of products
+Followed by "INV"
+
+Display the Inventory Code and its length.
+
+Bonus:
+
+Show the total value rounded to 2 decimal places.
+
+
+==============================================================================================================================================
+✅ Task 19
+===============================================================================================================================================
+Objective: Create a "Simple Exam Results Processor" program.
+
+=============================================================================================================================================
+Requirements:
+============================================================================================================================================
+
+Ask the user for their name.
+Ask how many students wrote the exam (between 4 and 8).
+Create two arrays of that size:
+string[] for student names
+int[] for scores (0–100)
+
+Use a for loop to collect each student’s name and score.
+After collecting the data, display:
+All student names with their scores
+The highest score and the name of the student who got it
+The lowest score and the name of the student who got it
+The average score (rounded to 1 decimal place)
+
+Count how many students passed (score ≥ 50) and how many failed.
+Use if-else to give a class comment based on the pass rate:
+Pass rate ≥ 70% → "Strong class performance"
+Pass rate ≥ 40% and < 70% → "Average class performance"
+Pass rate < 40% → "Weak class performance"
+
+Create a "Results Code":
+First 3 uppercase letters of the user’s name
+Followed by the number of students who passed
+Followed by "RES"
+
+Display the Results Code and its length.
+
+Bonus:
+
+=================================================================================================================================================
+✅ Revision Exercise
+================================================================================================================================================
+Objective: Create a "Weekly Sales Tracker" program.
+
+===============================================================================================================================================
+Requirements:
+============================================================================================================================================
+Ask the user for their name.
+Create an array of size 7 to store daily sales amounts (double[]).
+Use a for loop to ask for the sales amount of each day (Day 1 to Day 7) and store them in the array.
+===========================================================================================================================================
+After collecting the data, calculate and display:
+==============================================================================================================================================
+Total sales for the week
+Average daily sales (rounded to 2 decimal places)
+Highest sales day (the amount)
+Lowest sales day (the amount)
+
+Generate a random bonus percentage between 5 and 15.
+Calculate the bonus amount (total sales × bonus percentage / 100).
+===============================================================================================================================================
+Use if-else to give a performance message:
+===============================================================================================================================================
+Total sales ≥ 10000 → "Excellent week!"
+Total sales ≥ 5000 and < 10000 → "Good week"
+Total sales < 5000 → "Needs improvement"
+==========================================================================================================================================
+Create a "Sales Code":
+========================================================================================================================================
+First 3 uppercase letters of the name
+Followed by the total sales (as a whole number)
+Followed by "SALES"
+
+Display the Sales Code and its length.
+
+==================================================== + Foreach loops ================================================================================
+
+✅ Task 20
+Objective: Create a "Product Review Analyzer" program.
+
+====================================================================================================================================================
+Requirements:
+==================================================================================================================================================
+Ask the user for their name.
+Create an array of 5 product ratings (int[]) with values between 1 and 5 (you can hardcode them or ask the user to enter them).
+==================================================================================================================================================
+Use a foreach loop to:
+===================================================================================================================================================
+Display each rating
+Calculate the total of all ratings
+
+Calculate the average rating (rounded to 1 decimal place).
+Use another foreach loop (or the same one) to count how many ratings are 5 stars.
+Use if-else to give a final comment based on the average:
+Average ≥ 4.5 → "Excellent product!"
+Average ≥ 3.5 and < 4.5 → "Good product"
+Average < 3.5 → "Needs improvement"
+=============================================================================================================================================
+Create a "Review Code":
+===============================================================================================================================================
+First 3 uppercase letters of the name
+Followed by the number of 5-star ratings
+Followed by "REV"
+
+Display the Review Code and its length.
+
+Bonus:
+
+Ask the user to enter the 5 ratings instead of hardcoding them.
+
+===============================================================================================================================================
+✅ Task 21
+================================================================================================================================================
+Objective: Create a "Student Grades Overview" program.
+===============================================================================================================================================
+Requirements:
+==============================================================================================================================================
+Ask the user for their name.
+Create an array of 6 student scores (int[]) between 0 and 100.
+(You can hardcode them or ask the user to enter them.)
+===========================================================================================================================================
+Use a foreach loop to:
+===============================================================================================================================================
+Display each score
+Calculate the total of all scores
+
+Calculate the average score (rounded to 1 decimal place) and display it.
+===============================================================================================================================================
+Use another foreach loop to count how many students:
+===============================================================================================================================================
+Passed (score ≥ 50)
+Got a distinction (score ≥ 75)
+====================================================================================================================================================
+Use if-else to give a class comment based on the average:
+=======================================================================================================================================================
+Average ≥ 75 → "Outstanding class!"
+Average ≥ 50 and < 75 → "Satisfactory class"
+Average < 50 → "Class needs support"
+=========================================================================================================================================================
+Create a "Class Code":
+=========================================================================================================================================
+First 3 uppercase letters of the name
+Followed by the number of distinctions
+Followed by "CLS"
+
+Display the Class Code and its length.
+
+Bonus:
+
+Ask the user to input the 6 scores instead of hardcoding them.
+
+
+==================================================== METHODS ==============================================================================================
+
+✅ Task 22
+===========================================================================================================================================================
+Objective: Create a "Simple Calculator with Methods" program.
+
+==========================================================================================================================================================
+Requirements:
+=========================================================================================================================================================
+Ask the user for their name.
+========================================================================================================================================================
+Create the following methods:
+======================================================================================================================================================
+DisplayWelcome(string name) → Prints a welcome message using the name.
+Add(double a, double b) → Returns the sum of two numbers.
+Multiply(double a, double b) → Returns the product of two numbers.
+GetAverage(double[] numbers) → Returns the average of an array of numbers.
+======================================================================================================================================================
+In Main:
+===================================================================================================================================================
+Call DisplayWelcome and pass the user’s name.
+Ask the user for two numbers.
+Call Add and Multiply and display the results.
+Create an array of 4 numbers (you can hardcode or ask the user).
+Call GetAverage and display the average (rounded to 2 decimal places).
+==================================================================================================================================================
+Create a "Calc Code":
+=====================================================================================================================================================
+First 3 uppercase letters of the name
+Followed by the word "CALC"
+
+Display the Calc Code and its length.
+
+✅ Task 23
+Objective: Create a "Student Marks Processor" program using methods.
+Requirements:
+
+Ask the user for their name.
+Create the following methods:
+DisplayWelcome(string name) → Prints a welcome message.
+GetAverage(int[] marks) → Returns the average of the marks (as double, rounded to 1 decimal place).
+CountDistinctions(int[] marks) → Returns how many marks are ≥ 75.
+GetHighest(int[] marks) → Returns the highest mark in the array.
+
+In Main:
+Call DisplayWelcome.
+Ask the user how many students (between 4 and 8).
+Create an array of that size and fill it with marks (0–100).
+Use a foreach loop to display all the marks.
+Call the three methods above and display:
+Average
+Number of distinctions
+Highest mark
+
+Use if-else to give a short class comment based on the average.
+
+Create a "Marks Code":
+First 3 uppercase letters of the name
+Followed by the number of distinctions
+Followed by "MRK"
+
+Display the Marks Code and its length.
+
+
+Reminders:
+
+Don’t call methods twice.
+Use foreach where required.
+Make sure Math.Round is assigned properly.
