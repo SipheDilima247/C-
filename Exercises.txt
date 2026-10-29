@@ -837,6 +837,7 @@ Followed by the word "CALC"
 
 Display the Calc Code and its length.
 
+===========================================================
 ✅ Task 23
 Objective: Create a "Student Marks Processor" program using methods.
 Requirements:
@@ -873,3 +874,35 @@ Reminders:
 Don’t call methods twice.
 Use foreach where required.
 Make sure Math.Round is assigned properly.
+
+================================================METHOD OVERLOADING & PARAMS KEYWORD ====================================================================
+
+✅ Task 24
+=====================================================================================================================================================
+Objective: 
+======================================================================================================================================================
+
+Create a "Flexible Calculator" program using method overloading and params.
+
+Requirements:
+
+Ask the user for their name and display a welcome message.
+Create overloaded methods named Calculate:
+Calculate(int a, int b) → Returns the sum of two integers.
+Calculate(int a, int b, int c) → Returns the sum of three integers.
+Calculate(params int[] numbers) → Returns the sum of any number of integers (using params + foreach).
+
+In Main:
+Call the 2-parameter version and display the result.
+Call the 3-parameter version and display the result.
+Call the params version with at least 5 numbers and display the result.
+
+Also create a method:
+DisplayResult(string message, int result) → Displays a message and the result nicely.
+
+Create a "Calc Code":
+First 3 uppercase letters of the name
+Followed by "CALC"
+
+Display the Calc Code and its length.
+Focus: Clean method overloading + correct use of params.
