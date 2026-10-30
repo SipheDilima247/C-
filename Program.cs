@@ -1,19 +1,63 @@
-﻿namespace Exercise_1
+﻿namespace exercise2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //-- PROGRAM THAT FINDS HYPOTENUSE OF A TRIANGLE -----
-            Console.WriteLine("Enter side A: ");
-            double a = Convert.ToDouble(Console.ReadLine());
+            Random random = new Random();
+            bool playAgain = true;
+            int min = 1;
+            int max = 100;
+            int guess;
+            int number;
+            int guesses;
+            String response;
 
-            Console.WriteLine("Enter side B: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            while (playAgain == true)
+            {
+                guess = 0;
+                guesses = 0;
+                response = "";
+                number = random.Next(min, max + 1);
 
-            double c = Math.Sqrt((a * a) + (b * b));
+                while (guess != number)
+                {
+                    Console.WriteLine("Guess a number between " + min + " - " + max + " : ");
+                    guess = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Guess: " + guess);
 
-            Console.WriteLine("The Hypotenuse is: " + c);
+                    if (guess > number)
+                    {
+                        Console.WriteLine(guess + " is too high!");
+                    }
+
+                    else if (guess < number)
+                    {
+                        Console.WriteLine(guess + " is too low!");
+                    }
+
+                    guesses++;
+
+                }
+                Console.WriteLine("Number: " + number);
+                Console.WriteLine("You win!");
+                Console.WriteLine("Guesses: " + guesses);
+                Console.WriteLine("Would you like to play again (Y/N)");
+                response = Console.ReadLine();
+                response = response.ToUpper();
+
+                if (response == "Y")
+                {
+                    playAgain = true;
+                }
+
+                else
+                {
+                    playAgain = false;
+                }
+            }
+
+            Console.WriteLine("Thanks for playing");
         }
     }
 }
