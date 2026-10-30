@@ -840,8 +840,9 @@ Display the Calc Code and its length.
 ===========================================================
 ✅ Task 23
 Objective: Create a "Student Marks Processor" program using methods.
+=================================================================================================================================================
 Requirements:
-
+==============================================================================================================================================
 Ask the user for their name.
 Create the following methods:
 DisplayWelcome(string name) → Prints a welcome message.
@@ -849,7 +850,9 @@ GetAverage(int[] marks) → Returns the average of the marks (as double, rounded
 CountDistinctions(int[] marks) → Returns how many marks are ≥ 75.
 GetHighest(int[] marks) → Returns the highest mark in the array.
 
+===================================================================================================================================================
 In Main:
+===================================================================================================================================================
 Call DisplayWelcome.
 Ask the user how many students (between 4 and 8).
 Create an array of that size and fill it with marks (0–100).
@@ -883,8 +886,9 @@ Objective:
 ======================================================================================================================================================
 
 Create a "Flexible Calculator" program using method overloading and params.
-
+======================================================================================================================================================
 Requirements:
+===================================================================================================================================================
 
 Ask the user for their name and display a welcome message.
 Create overloaded methods named Calculate:
@@ -892,12 +896,18 @@ Calculate(int a, int b) → Returns the sum of two integers.
 Calculate(int a, int b, int c) → Returns the sum of three integers.
 Calculate(params int[] numbers) → Returns the sum of any number of integers (using params + foreach).
 
+=====================================================================================================================================================
 In Main:
+====================================================================================================================================================
+
 Call the 2-parameter version and display the result.
 Call the 3-parameter version and display the result.
 Call the params version with at least 5 numbers and display the result.
 
+=====================================================================================================================================================
 Also create a method:
+===================================================================================================================================================
+
 DisplayResult(string message, int result) → Displays a message and the result nicely.
 
 Create a "Calc Code":
@@ -906,3 +916,42 @@ Followed by "CALC"
 
 Display the Calc Code and its length.
 Focus: Clean method overloading + correct use of params.
+
+=====================================================================================================================================================
+✅ Task 25
+=====================================================================================================================================================
+
+Objective:
+
+Create a "Stats Helper" program using method overloading and params.
+
+==================================================================================================================================================
+Requirements:
+==================================================================================================================================================
+
+Ask the user for their name and display a welcome message.
+Create overloaded methods named GetStats:
+GetStats(int a, int b) → Returns the average of two numbers (as double).
+GetStats(int a, int b, int c) → Returns the average of three numbers (as double).
+GetStats(params int[] numbers) → Returns the average of any number of integers (using params + foreach). Round the result to 1 decimal place.
+
+===================================================================================================================================================
+Also create:
+==================================================================================================================================================
+
+DisplayResult(string label, double value) → Displays the label and the value nicely.
+
+=================================================================================================================================================
+In Main:
+=================================================================================================================================================
+Call the 2-parameter version and display the result using DisplayResult.
+Call the 3-parameter version and display the result using DisplayResult.
+Call the params version with at least 6 numbers and display the result using DisplayResult.
+
+====================================================================================================================================================
+Create a "Stats Code":
+===================================================================================================================================================
+First 3 uppercase letters of the name
+Followed by "STA"
+
+Display the Stats Code and its length.
