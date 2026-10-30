@@ -955,3 +955,73 @@ First 3 uppercase letters of the name
 Followed by "STA"
 
 Display the Stats Code and its length.
+
+======================================================================================================================================================
+✅ Task 26
+=====================================================================================================================================================
+Objective:
+====================================================================================================================================================
+
+Create a "Number Analyzer" program using method overloading and params.
+========================================================================================================================================================
+Requirements:
+=====================================================================================================================================================
+
+Ask the user for their name and display a welcome message.
+Create overloaded methods named Analyze:
+Analyze(int a, int b) → Returns the highest of the two numbers.
+Analyze(int a, int b, int c) → Returns the highest of the three numbers.
+Analyze(params int[] numbers) → Returns the highest number in the array (using params + foreach).
+
+Also create:
+DisplayResult(string label, int value) → Displays the label and the value.
+
+============================================================================================================================================================
+In Main:
+=========================================================================================================================================================
+Call the 2-parameter version and display the result using DisplayResult.
+Call the 3-parameter version and display the result using DisplayResult.
+Call the params version with at least 7 numbers and display the result using DisplayResult.
+
+Create a "Analyze Code":
+First 3 uppercase letters of the name
+Followed by "ANL"
+
+Display the Analyze Code and its length.
+
+=================================== Exception, Conditional Operator, String Interpolation ========================================================
+
+
+✅ Task 27
+=====================================================================================================================================================
+
+Objective:
+==============================================================================================================================================
+Create a "Safe Average Calculator" program that uses the new topics.
+
+====================================================================================================================================================
+Requirements:
+==================================================================================================================================================
+Ask the user for their name using string interpolation in the welcome message.
+Ask the user how many numbers they want to enter (between 3 and 8).
+Use a try-catch block when reading the numbers to handle invalid input (e.g. letters instead of numbers).
+Store the numbers in an array.
+
+===============================================================================================================================================
+Create a method:
+==========================================================================================================================================
+GetAverage(int[] numbers) → Returns the average as a double (rounded to 1 decimal place).
+
+Use the ternary operator (? :) to display a message:
+If average ≥ 50 → "Good average"
+Otherwise → "Low average"
+
+Display all results using string interpolation.
+Create a "Safe Code":
+First 3 uppercase letters of the name + "SAFE"
+
+Display the Safe Code and its length.
+Focus areas for this task:
+try-catch
+Ternary operator (? :)
+String interpolation ($"...")
